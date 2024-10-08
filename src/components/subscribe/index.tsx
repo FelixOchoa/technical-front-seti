@@ -29,7 +29,9 @@ const SubscribeComponent: React.FC = () => {
 
   return (
     <div className="flex flex-col w-full p-8">
-      <h1 className="text-lg font-semibold">Suscribirse a un nuevo fondo</h1>
+      <div className="flex flex-row items-center justify-between w-full">
+        <h1 className="text-lg font-semibold">Suscribirse a un nuevo fondo</h1>
+      </div>
 
       <Form
         layout="vertical"

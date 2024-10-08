@@ -30,9 +30,12 @@ const columns: TableProps<TransactionProps>["columns"] = [
     key: "uuid",
   },
   {
-    title: "Id del Fondo",
-    dataIndex: "fund_id",
-    key: "fund_id",
+    title: "Nombre del Fondo",
+    dataIndex: "fund_info",
+    key: "fund_info",
+    render: (text) => {
+      return <span>{text.name}</span>;
+    },
   },
   {
     title: "Tipo",

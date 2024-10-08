@@ -11,6 +11,14 @@ export default {
     }
   },
 
+  getActiveSubscriptions: async () => {
+    try {
+      return await getRequest(`${BASE_URL}/transactions/get-active?user_id=1`);
+    } catch (error) {
+      return { error };
+    }
+  },
+
   createTransaction: async (data: any) => {
     try {
       return await postRequest(`${BASE_URL}/transactions/subscribe`, data);

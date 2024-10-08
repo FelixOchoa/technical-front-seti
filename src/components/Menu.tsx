@@ -5,16 +5,16 @@ type MenuItem = Required<MenuProps>["items"][number];
 
 const items: MenuItem[] = [
   {
-    label: "Historial de Transacciones",
-    key: "transactions",
-  },
-  {
     label: "Aperturas",
     key: "subscribe",
   },
   {
     label: "Cancelaciones",
     key: "unsubscribe",
+  },
+  {
+    label: "Historial de Transacciones",
+    key: "transactions",
   },
 ];
 
