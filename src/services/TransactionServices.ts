@@ -1,6 +1,6 @@
 import { getRequest, postRequest, deleteRequest } from "./Request";
 
-const BASE_URL: String = "http://18.224.58.5";
+const BASE_URL: String = "https://back.felixochoa.tech";
 
 export default {
   getAllTransactions: async () => {
